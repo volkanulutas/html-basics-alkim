@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Layout Example</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="menu-icon">☰</div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+
+        <button>Ara</button>
+      </div>
+    </header>
+
+    <!-- PAGE LAYOUT -->
+    <div class="container">
+      <!-- LEFT SIDEBAR -->
+      <aside>
+        <h3>HEADER</h3>
+
+        <ul>
+          <li>Main</li>
+          <li>Header</li>
+        </ul>
+
+        <h3>LEFT CONTENT</h3>
+
+        <ul>
+          <li>Home</li>
+          <li>Tab 2</li>
+          <li>Tab 3</li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <div class="card">
+          <h2>Card A</h2>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+          <h2>Card B</h2>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+
+        <!-- SMALL CARD ROW -->
+        <div class="card-row">
+          <div class="mini-card">Card A</div>
+
+          <div class="mini-card">Card B</div>
+
+          <div class="mini-card">Card C</div>
+        </div>
+
+        <!-- TIP BOX -->
+        <div class="tip">Tip: This is a helpful information box.</div>
+      </main>
+
+      <!-- RIGHT PANEL -->
+      <div class="right-panel">
+        <h3>RIGHT SIDEBAR</h3>
+
+        <ul>
+          <li>Home</li>
+          <li>Tab 2</li>
+          <li>Tab 3</li>
+        </ul>
+
+        <div class="tip-small">Tip information</div>
+      </div>
+    </div>
+  </body>
+</html>

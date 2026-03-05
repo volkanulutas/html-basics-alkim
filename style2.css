@@ -1,0 +1,180 @@
+/* BODY RESET */
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+
+header {
+  display: flex; /* elemanları yan yana getirir */
+  align-items: center; /* dikey ortalama */
+
+  background: #f58220;
+
+  padding: 10px;
+}
+
+/* MENU ICON */
+
+.menu-icon {
+  font-size: 26px;
+
+  color: white;
+
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+/* SEARCH AREA */
+
+.search-box {
+  display: flex; /* input ve button yan yana */
+
+  flex-grow: 1; /* header içindeki boş alanı doldurur */
+}
+
+/* SEARCH INPUT */
+
+.search-box input {
+  flex-grow: 1; /* input genişler */
+
+  padding: 8px;
+
+  border: none;
+
+  border-radius: 4px;
+}
+
+/* SEARCH BUTTON */
+
+.search-box button {
+  padding: 8px 15px;
+
+  margin-left: 10px;
+
+  background: #2f6de0;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+/* PAGE LAYOUT */
+
+.container {
+  display: flex; /* 3 kolonlu layout oluşturur */
+}
+
+/* LEFT SIDEBAR */
+
+aside {
+  width: 220px; /* sabit genişlik */
+
+  background: #eaeaea;
+
+  padding: 20px;
+}
+
+/* MAIN CONTENT */
+
+main {
+  flex-grow: 1; /* kalan alanı doldurur */
+
+  padding: 20px;
+}
+
+/* RIGHT PANEL */
+
+.right-panel {
+  width: 220px;
+
+  background: #eeeeee;
+
+  padding: 20px;
+}
+
+/* MAIN CARDS */
+
+.card {
+  background: #dbe8f2;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+}
+
+/* CARD ROW */
+
+.card-row {
+  display: flex; /* kartları yan yana getirir */
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* MINI CARD */
+
+.mini-card {
+  flex: 1; /* kartların eşit genişlik almasını sağlar */
+
+  background: #ddd;
+
+  padding: 15px;
+
+  text-align: center;
+
+  border-radius: 6px;
+}
+
+/* TIP BOX */
+
+.tip {
+  background: #2d3640;
+
+  color: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+}
+
+/* SMALL TIP */
+
+.tip-small {
+  background: #2d3640;
+
+  color: white;
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* kolonları alt alta getirir */
+  }
+
+  aside {
+    display: none; /* mobilde sidebar gizlenir */
+  }
+
+  .right-panel {
+    display: none; /* mobilde sağ panel gizlenir */
+  }
+}
