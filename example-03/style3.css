@@ -1,0 +1,97 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+header{
+    
+    padding:10px;
+    display: flex;
+    background-color: orange;
+    align-items: center;
+}
+.search-box{
+       
+    display: flex;
+    justify-content: right;
+    flex-grow:1;
+    padding-right:10px;
+}
+ .search-box input{
+    flex-grow: 1;
+}
+.menu-icon{
+    padding-right: 20px;
+   
+}
+.container{
+    display: flex;
+}
+
+aside{
+    padding:20px;
+    width:200px;
+    background-color: grey;
+
+}
+main{
+margin: 20px;
+flex-direction: column;
+flex-grow: 1;
+
+}
+main h2{
+    padding-left:2px;
+}
+.card{
+    
+    gap:20px;
+    background-color: aqua;
+    border-radius: 10px;
+    flex:1;
+}
+.card-row{
+    gap:10px;
+    display: flex;
+}
+.mini-card{
+    flex:1;
+    background-color: aquamarine;
+}
+.tip{
+    margin-top:10px;
+    background-color: blue;
+    color:white;
+    flex:1;
+}
+.right-panel{
+    padding: 20px;
+    width: 220px;
+    background-color: grey;
+}
+.right-panel h3 {
+    text-align: center;
+
+}
+.right-panel ul{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+           
+}
+.tip-small{
+    margin-top:90px;
+    background-color: brown;
+    color:white;
+    text-align: center;
+}
+@media(max-width:768px){
+    aside, .right-panel{
+        display:none;
+    }
+    .card-row{
+        flex-direction: column;
+    }
+}
